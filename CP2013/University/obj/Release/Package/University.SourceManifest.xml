@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="H:\Undergraduate programme\3rd trimester\Advanced Programming\Lab totus\CP2013\University\obj\Release\Package\PackageTmp" managedRuntimeVersion="v4.0" />
+  <setAcl path="H:\Undergraduate programme\3rd trimester\Advanced Programming\Lab totus\CP2013\University\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="H:\Undergraduate programme\3rd trimester\Advanced Programming\Lab totus\CP2013\University\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

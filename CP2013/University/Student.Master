@@ -1,0 +1,266 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Student.master.cs" Inherits="University.Student" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr"><head profile="http://gmpg.org/xfn/11">
+<title>Academic Education</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="imagetoolbar" content="no">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<!-- Homepage Specific Elements -->
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.tabs.setup.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            theme: 'dark_rounded',
+            overlay_gallery: false
+        });
+    });
+</script>
+<link rel="stylesheet" href="styles/prettyPhoto.css" type="text/css">
+<script type="text/javascript" src="scripts/jquery-prettyPhoto.js"></script>
+<!-- End Homepage Specific Elements -->
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1><a href="Home.aspx">University of Excellence</a></h1>
+      <p>LEARNUOE.COM</p>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li><a href="Home.aspx">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">A - Z Index</a></li>
+        <li><a href="StudentLogin.aspx" >Student Login</a></li>
+        <li class="last"><a href="Login.aspx">Staff Login</a></li>
+      </ul>
+      
+      <form action="#" method="post" id="sitesearch">
+        <fieldset>
+          <!-- <strong>Hello: </strong>-->
+          <!-- <input type="text" value="Search Our Website…" onfocus="this.value=(this.value=='Search Our Website…')? '' : this.value ;">-->
+              
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper row2">
+  <div class="rnd">
+    <!-- ###### -->
+    <div id="topnav">
+      <ul>
+        <li><a href="Home.aspx">Home</a></li>        
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="gallery.aspx">Gallery</a></li>        
+        <li><a href="ViewAccommodation.aspx">Accommodation</a></li>
+        <li><a href="#">Our Resources</a></li>
+        <li><a href="#">Abous us</a></li>        
+        <li class="last"><a href="Profile.aspx">Profile</a></li>
+      </ul>
+    </div>
+    <!-- ###### -->
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="featured_slide" class="clear ui-tabs ui-widget ui-widget-content ui-corner-all">
+    <!-- ###### -->
+    <div class="overlay_left"></div>
+    <div id="featured_content">
+      <div class="featured_box ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="fc1" style=""><img src="images/demo/slider/1.jpg" alt="">
+        <div class="floater">
+          <h2>Academic Education</h2>
+          <p>The university established the company in Singapore in 2005 as part of its expressed intent of “Creating a brighter future for life in the tropics world-wide through graduates and discoveries that make a difference”.</p>
+          <p class="readmore"><a href="#">Continue Reading »</a></p>
+        </div>
+      </div>
+      <div class="featured_box ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="fc2" style=""><img src="images/demo/slider/2.jpg" alt="">
+        <div class="floater">
+          <h2>Top 3% of university in the world</h2>
+          <p>All programs offered follow the same curriculum as the Australian versions but are contextualised to the Asian environment. This ensures high quality, while at the same time maintaining a local relevance.</p>
+          <p class="readmore"><a href="#">Continue Reading »</a></p>
+        </div>
+      </div>
+      <div class="featured_box ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="fc3" style=""><img src="images/demo/slider/3.jpg" alt="">
+        <div class="floater">
+          <h2>Diversity in learning</h2>
+          <p>Offers courses at the pre-university level, specifically designed to provide pathways for students who are unable to immediately attain university entrance standards.</p>
+          <p class="readmore"><a href="#">Continue Reading »</a></p>
+        </div>
+      </div>
+      <div class="featured_box ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="fc4" style=""><img src="images/demo/slider/4.jpg" alt="">
+        <div class="floater">
+          <h2>Alumni Engagement</h2>
+          <p>We have a dynamic alumni community both in Singapore and the region which we hope to effectively engage on a regular basis.</p>
+          <p class="readmore"><a href="#">Continue Reading »</a></p>
+        </div>
+      </div>
+      <div class="featured_box ui-tabs-panel ui-widget-content ui-corner-bottom" id="fc5" style=""><img src="images/demo/slider/5.jpg" alt="">
+        <div class="floater">
+          <h2>Learning Support</h2>
+          <p>Creating logical, Elaborated Essays, Reports and Presentations</p>
+          <p class="readmore"><a href="#">Continue Reading »</a></p>
+        </div>
+      </div>
+    </div>
+    <ul id="featured_tabs" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+      <li class="ui-corner-top ui-state-default"><a href="#fc1">All About The University</a></li>
+      <li class="ui-corner-top ui-state-default"><a href="#fc2">Why You Should Study With Us</a></li>
+      <li class="ui-corner-top ui-state-default"><a href="#fc3">Education And Student Experience</a></li>
+      <li class="ui-corner-top ui-state-default"><a href="#fc4">Alumni And Its Donors</a></li>
+      <li class="last ui-corner-top ui-tabs-selected ui-state-active"><a href="#fc5">Latest University News &amp; Events</a></li>
+    </ul>
+    <div class="overlay_right"></div>
+    <!-- ###### -->
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper row3">
+  <div class="rnd">
+    <div id="container" class="clear">
+      <!-- ####################################################################################################### -->            
+        <form id="form1" method="post" runat="server">       
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+       
+        </form>        
+                                       
+      <!-- ####################################################################################################### -->
+
+      <div id="twitter" class="clear">
+        <div class="fl_left"><a href="#">Follow Us On Twitter</a></div>
+        <div class="fl_right"></div>
+      </div>
+      <!-- ####################################################################################################### -->
+      <div id="academiclinks" class="clear">
+        <h2>Quickly Find What You Are Looking For</h2>
+        <div class="linkbox">
+          <ul>
+            <li><a href="#">» Academic Advisory</a></li>
+            <li><a href="#">» Academic Assistance</a></li>
+            <li><a href="#">» Academic Calendars</a></li>
+            <li><a href="#">» Academics Office</a></li>
+            <li><a href="#">» Administration</a></li>
+            <li><a href="#">» Adult Learners</a></li>
+            <li><a href="#">» Alumni Chapters</a></li>
+            <li><a href="#">» Alumni Events</a></li>
+            <li><a href="#">» Athletics</a></li>
+            <li><a href="#">» Campus Life At a Glance</a></li>
+            <li><a href="#">» Campus Recreation</a></li>
+            <li><a href="#">» Campus Safety &amp; Security</a></li>
+          </ul>
+        </div>
+        <div class="linkbox">
+          <ul>
+            <li><a href="#">» Class Schedules</a></li>
+            <li><a href="#">» Counselling Center</a></li>
+            <li><a href="#">» Course Descriptions and Catalogue</a></li>
+            <li><a href="#">» Department Directory</a></li>
+            <li><a href="#">» Departments &amp; Programs</a></li>
+            <li><a href="#">» Fellowships</a></li>
+            <li><a href="#">» Finals Schedules</a></li>
+            <li><a href="#">» Financial Aid</a></li>
+            <li><a href="#">» Fitness and Recreation Facilities</a></li>
+            <li><a href="#">» Global Learning</a></li>
+            <li><a href="#">» Graduate</a></li>
+            <li><a href="#">» Graduate Admissions</a></li>
+          </ul>
+        </div>
+        <div class="linkbox">
+          <ul>
+            <li><a href="#">» Graduate Health Services</a></li>
+            <li><a href="#">» Graduate Housing</a></li>
+            <li><a href="#">» Graduate Programs</a></li>
+            <li><a href="#">» Graduate Student Association</a></li>
+            <li><a href="#">» Graduate Studies</a></li>
+            <li><a href="#">» Honours Program</a></li>
+            <li><a href="#">» Interactive Schedule</a></li>
+            <li><a href="#">» International Programs</a></li>
+            <li><a href="#">» International Students</a></li>
+            <li><a href="#">» Intramural Sports</a></li>
+            <li><a href="#">» Language Resources</a></li>
+            <li><a href="#">» Maps and Directions</a></li>
+          </ul>
+        </div>
+        <div class="linkbox last">
+          <ul>
+            <li><a href="#">» Office of the Registrar</a></li>
+            <li><a href="#">» Online Learning</a></li>
+            <li><a href="#">» Parent Information</a></li>
+            <li><a href="#">» Residence Life</a></li>
+            <li><a href="#">» Residential Colleges</a></li>
+            <li><a href="#">» Schools and Colleges</a></li>
+            <li><a href="#">» Student Activities</a></li>
+            <li><a href="#">» Student Affairs</a></li>
+            <li><a href="#">» Student Development</a></li>
+            <li><a href="#">» Student Financial Services</a></li>
+            <li><a href="#">» Student Group Directory</a></li>
+            <li><a href="#">» Student Life</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ####################################################################################################### -->
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper row4">
+  <div class="rnd">
+    <div id="footer" class="clear">
+      <!-- ####################################################################################################### -->
+      <div class="fl_left clear">
+        <div class="fl_left center"><img src="images/demo/worldmap.gif" alt=""><br>
+          <a href="#">Find Us With Google Maps »</a></div>
+        <address>
+        194 Upper Thomson Rd<br>
+        <br />
+        Singapores<br>
+        574339<br>
+        <br>
+        Tel: 64-656-656<br>
+        Email: <a href="#">enquires-support@eou.com</a>
+        </address>
+      </div>
+      <div class="fl_right">
+        <div id="social" class="clear">
+          <p>Stay Up to Date With Whats Happening</p>
+          <ul>
+            <li><a style="background-position:0 0;" href="#">Twitter</a></li>
+            <li><a style="background-position:-72px 0;" href="#">LinkedIn</a></li>
+            <li><a style="background-position:-142px 0;" href="#">Facebook</a></li>
+            <li><a style="background-position:-212px 0;" href="#">Flickr</a></li>
+            <li><a style="background-position:-282px 0;" href="#">RSS</a></li>
+          </ul>
+        </div>
+        <div id="newsletter">
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Subscribe To Our Newsletter:</legend>
+              <input type="text" value="Enter Email Here…" onfocus="this.value=(this.value=='Enter Email Here…')? '' : this.value ;">
+              <input type="text" id="subscribe" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <!-- ####################################################################################################### -->
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright © 2005 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Template</a></p>
+  </div>
+</div>
+
+</body></html>

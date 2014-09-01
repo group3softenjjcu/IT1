@@ -1,0 +1,207 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="University.Admin.Admin" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />
+    <link href="../Employees/css/themes/base/jquery.ui.autocomplete.css" rel="stylesheet"
+        type="text/css" />
+<!--[if lt IE 8]>
+<link href="css/style_IE.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+    <script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>  
+    <script src="js/jquery.datepick.js" type="text/javascript"></script>
+    
+   <!-- <link href="shortcut icon" href="../images/remove.ico" type="image/x-icon />-->
+</head>
+<body>
+   <div class="container">
+  <div class="header">
+    <div class="header_logo">
+      <a href="#"><img src="images/logo.jpg" width="677" height="122" alt="Logo" class="logo" /></a>
+      <div class="right">
+        <ul class="dark">
+          <li class="first"><a href="../ChangePassword.aspx">Change Password</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>        
+        
+        <div class="clr"></div>
+        <ul class="light">
+          <li class="first"><a href="#"><img src="images/icon_email.gif" alt="picture" width="14" height="10" class="email" /></a><a href="#">37</a> incoming messages</li>
+          <li><a href="#"><img src="images/icon_logout.gif" alt="picture" width="16" height="16" class="logout" /></a><a href="../login.aspx">logout</a></li>
+        </ul>
+        <p>Logged in as <a href="#"><asp:Label ID="LabelUsername" runat="server" style="font-size:14px; font-weight:bold; color:White;"></asp:Label></a></p>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="menu">      
+      <ul>
+        <li class="first"><a href="Home.aspx" class="active"><span><span><span>Home</span></span></span></a></li>
+        <li><a href="Employee.aspx"><span><span><span>Employees</span></span></span></a></li>
+        <li><a href="ViewService.aspx"><span><span><span>Services</span></span></span></a></li>
+        <li><a href="AddStudentSubject.aspx"><span><span><span>Enrollment</span></span></span></a></li>
+        <li><a href="ViewDepartment.aspx"><span><span><span>Department</span></span></span></a></li>
+      </ul>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <div class="content_res">
+        
+      <div class="leftblock vertsortable">
+
+        <!-- gadget left 1 -->
+            <div class="gadget">
+          <div class="titlebar vertsortable_head">
+            <a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+            <h3>Administration Options</h3>
+          </div>
+          <div class="gadgetblock">
+            <div class="iconblockpar">
+              <div class="iconblockshade"><div class="blockshadow">
+                <div class="bs_content iconblock"><p><a href="ViewProfile.aspx"><img src="images/img_1.jpg" width="64" height="64" alt="Admin Box" /></a><br /><a href="ViewProfile.aspx">Profile</a></p></div>
+              </div></div>
+              <div class="iconblockshade"><div class="blockshadow">
+                <asp:Panel ID="PanelAlumnus" runat="server"><div class="bs_content iconblock"><p><a href="ViewStudents.aspx"><img src="images/images.jpg" width="64" height="64" alt="Web Box" /></a><br /><a href="ViewStudents.aspx">Alumnus</a></p></div></asp:Panel>
+              </div></div>
+              <div class="iconblockshade"><div class="blockshadow">
+                <asp:Panel ID="PanelAppointment" runat="server"><div class="bs_content iconblock"><p><a href="ViewAppointment.aspx"><img src="images/img_3.jpg" width="64" height="64" alt="Art Box" /></a><br /><a href="ViewAppointment.aspx">Appointment</a></p></div></asp:Panel>
+              </div></div>
+              <div class="iconblockshade"><div class="blockshadow">
+                <asp:Panel ID="PanelService" runat="server"><div class="bs_content iconblock"><p><a href="ViewAccommodation.aspx"><img src="images/img_4.jpg" width="64" height="64" alt="Art Line" /></a><br /><a href="AddAccommodation.aspx">Services</a></p></div></asp:Panel>
+              </div></div>
+              <div class="iconblockshade"><div class="blockshadow">
+                <asp:Panel ID="PanelEmployee" runat="server"><div class="bs_content iconblock"><p><a href="AddEmployees.aspx"><img src="images/staff.jpg" width="64" height="64" alt="Employee" /></a><br /><a href="AddEmployees.aspx">Employees</a></p></div></asp:Panel>
+              </div></div>              
+              <div class="iconblockshade"><div class="blockshadow">
+                <asp:Panel ID="PanelSubject" runat="server"><div class="bs_content iconblock"><p><a href="AddSubject.aspx"><img src="images/index.jpg" width="64" height="64" alt="Subject" /></a><br /><a href="AddSubject.aspx">Subjects</a></p></div></asp:Panel>
+              </div></div>                                            
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+          
+        <!-- gadget left 2 -->        
+        <form id="form1" method="post" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+       </div>
+
+        <!-- gadget left 3 -->   
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>             
+        
+        <!-- more gadgets in line -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            
+        </asp:ContentPlaceHolder>
+
+        <!-- gadget left 5 -->
+        
+        </form>
+      </div>
+      
+      <div class="rightblock vertsortable">
+
+        <!-- gadget right 1 -->
+        <div class="gadget">
+          <div class="titlebar vertsortable_head">
+            <a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+            <h3>Date &amp; Time</h3>
+          </div>
+          <div class="gadgetblock">
+            <div class="whiteblock">
+              <p class="timeclock"><img src="images/icon_clock.gif" alt="picture" width="26" height="26" /> <span id="tm">11:57</span></p>
+              <!--<p class="light nobottom p_center"><asp:Label ID="LabelDateTime" runat="server" Text="Label"></asp:Label></p>-->
+            </div>
+            <!-- Datepicker -->
+            <h3><img src="images/icon_calendar.gif" alt="picture" width="21" height="21" class="calendar" />Calendar</h3>
+            <div id="datepicker"></div>
+            <div class="clr"></div>
+            <p class="bot8px"><a href="#" class="colourbutton button_orange"><span><span>+  Add Event</span></span></a>&nbsp;<a href="#" class="colourbutton button_blue"><span><span>List Events</span></span></a></p>
+          </div>
+        </div>
+
+        <!-- gadget right 2 -->
+        
+
+        <!-- gadget right 3 -->
+        
+
+        <!-- gadget right 4 -->
+        <div class="gadget">
+          <div class="titlebar vertsortable_head">
+            <a href="#" class="hidegadget" rel="hide_block"><img src="images/spacer.gif" alt="picture" width="19" height="33" /></a>
+            <h3>Quick contact form</h3>
+          </div>
+          <div class="gadgetblock">
+            <form action="" method="post" id="form_quickcontact" class="form_quickcontact">
+            <ol><li>
+              <label for="name">Your name:</label>
+              <input id="name" name="name" class="text" />
+              <div class="clr"></div>
+            </li><li>
+              <label for="email">Your contact email:</label>
+              <input id="email" name="email" class="text" />
+              <div class="clr"></div>
+            </li><li>
+              <label for="message">Your questons &amp; comments:</label>
+              <textarea id="message" name="message" rows="6" cols="50"></textarea>
+              <div class="clr"></div>
+            </li><li>
+              <a href="#" class="colourbutton button_blue"><span><span>Contact us now</span></span></a>
+              <!-- <input type="image" name="imageField" id="imageField" src="images/button_send.gif" class="send" /> -->
+              <div class="clr"></div>
+            </li></ol>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="bgr">
+      <img src="images/logo.jpg" width="430" height="99" alt="Logo" class="logo" />
+      <div class="f_right">
+        <ul>
+          <li class="first"><a href="#">Home</a></li>
+          <li><a href="">Administration</a></li>
+          <li><a href="">Settings</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div class="clr"></div>
+        <p><a href="#"><img src="images/footer_icon.gif" alt="picture" width="27" height="23" /></a>Website Administration by <a href="#"><span></span></a></p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+  <!-- DIALOGS -->
+  
+</div> 
+    
+    
+    
+        
+    
+</body>
+</html>

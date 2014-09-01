@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="strcon-Web.config Connection String" description="strcon Connection String used in web.config by the application to access the database." defaultValue="Data Source=SQL5011.Smarterasp.net;Initial Catalog=DB_9B21DD_University;Integrated Security=SSPI; User Id=DB_9B21DD_University_admin; Password = 12345678" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="H:\\Undergraduate\ programme\\3rd\ trimester\\Advanced\ Programming\\Lab\ totus\\CP2013\\University\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='strcon']/@connectionString" />
+  </parameter>
+</parameters>
